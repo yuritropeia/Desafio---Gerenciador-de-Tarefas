@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import styles from "./Content.module.css";
 
-function Content() {
+function Content({ tasks, setTasks }) {
   // Estado das tarefas, começando vazio
-  const [tasks, setTasks] = useState([]);
+  
   const [newTask, setNewTask] = useState("");
   const [tag, setTag] = useState("");
 
