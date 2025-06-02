@@ -2,20 +2,26 @@
   background-color: #ffffff;
   height: 75px;
   width: 650px;
-  margin: 0;
-  display: flex;
 }
 
 .tarefas {
-  width: 650px;
+  width: 588px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding-right: 4.23%;
+  margin-top: 24px;
+  margin-left: 28px;
   justify-content: end;
   color: #b1bacb;
   font-family: "Inter";
   font-weight: 400;
   font-size: 16px;
   line-height: 110%;
+}
+
+.rectangle {
+  width: 588px;
+  height: 1px;
+  background-color: #eeeeee;
+  margin-left: 28px;
+  margin-top: 24px;
 }

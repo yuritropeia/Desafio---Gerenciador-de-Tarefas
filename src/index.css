@@ -1,7 +1,7 @@
 body {
   margin: 0;
   width: 650px;
-  height: 584px;
+  min-height: 584px;
   color: #ffffff;
   font-family: 'Rubik';
   -webkit-font-smoothing: antialiased;

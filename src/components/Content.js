@@ -5,19 +5,33 @@ function Content() {
   // Estado das tarefas, começando vazio
   const [tasks, setTasks] = useState([]);
   const [newTask, setNewTask] = useState("");
+  const [tag, setTag] = useState("");
 
   // Função para adicionar uma nova tarefa
   const addTask = () => {
     if (newTask.trim()) {
-      const newTaskObj = { id: Date.now(), text: newTask, completed: false };
+      const newTaskObj = {
+        id: Date.now(),
+        text: newTask,
+        completed: false,
+        tag: tag,
+        created: `${String(new Date(Date.now()).getDate()).padStart(
+          2,
+          "0"
+        )}/${String(new Date(Date.now()).getMonth() + 1).padStart(
+          2,
+          "0"
+        )}/${new Date(Date.now()).getFullYear()}`,
+      };
       setTasks([...tasks, newTaskObj]);
       setNewTask(""); // Limpa o campo de texto após adicionar a tarefa
+      setTag(""); // Limpa o campo de texto após adicionar a tarefa
     }
   };
 
   // Função para detectar o pressionamento da tecla Enter
   const handleKeyPress = (event) => {
-    if (event.key === "Enter") {
+    if (event.key === "Enter" && tag !== "" && newTask !== "") {
       addTask(); // Chama a função de adicionar tarefa ao pressionar Enter
     }
   };
@@ -31,16 +45,13 @@ function Content() {
     );
   };
 
-  // Função para editar uma tarefa
-  const editTask = (taskId) => {
-    const newTaskText = prompt("Digite o novo texto da tarefa:");
-    if (newTaskText) {
-      setTasks(
-        tasks.map((task) =>
-          task.id === taskId ? { ...task, text: newTaskText } : task
-        )
-      );
-    }
+  // Função para concluir uma tarefa
+  const finishTask = (taskId) => {
+    setTasks(
+      tasks.map((task) =>
+        task.id === taskId ? { ...task, completed: true } : task
+      )
+    );
   };
 
   return (
@@ -56,8 +67,8 @@ function Content() {
 
         <input
           type="text"
-          value={newTask}
-          onChange={(e) => setNewTask(e.target.value)}
+          value={tag}
+          onChange={(e) => setTag(e.target.value)}
           placeholder="Etiqueta"
           onKeyDown={handleKeyPress} // Detecta quando a tecla Enter é pressionada
         />
@@ -67,60 +78,29 @@ function Content() {
       <ul>
         {tasks.length > 0 ? (
           tasks.map((task) => (
-            <li key={task.id} className={task.completed ? "completed" : ""}>
-              <div
-                style={{
-                  width: "280px",
-                  minHeight: "35px",
-                  wordWrap: "break-word",
-                  whiteSpace: "normal",
-                }}
-              >
-                {task.text}
+            <li key={task.id}>
+              <div className={styles.card1}>
+                <h1 className={task.completed ? styles.taskCompleted : styles.taskNotCompleted}>
+                  {task.text}
+                </h1>
+                <div>
+                  <h2>{task.tag}</h2>
+                  <p>Criado em: {task.created}</p>
+                </div>
               </div>
 
-              <div
-                style={{
-                  width: "121px",
-                  minHeight: "35px",
-                  alignContent: "center",
-                }}
-              >
-                {/* Botão para concluir a tarefa */}
-                <button
-                  style={{
-                    border: "1px solid",
-                    borderRadius: "4px",
-                    width: "121px",
-                    height: "44px",
-                    color: "#FFFFFF",
-                    backgroundColor: "#2d70fd",
-                    fontFamily: "Inter",
-                    fontWeight: "500",
-                    fontSize: "18px",
-                    lineHeight: "110%",
-                    letterSpacing: "1%",
-                    textAlign: "center",
-
-                  }}
-                  onClick={() => editTask(task.id)}
-                >
-Concluir
-                </button>
+              {/* Botão para concluir a tarefa */}
+              <div className={styles.card2}>
+                {task.completed ? (
+                  <div className={styles.checkCircle}>✔</div>
+                ) : (
+                  <button onClick={() => finishTask(task.id)}>Concluir</button>
+                )}
               </div>
             </li>
           ))
         ) : (
-          <p
-            style={{
-              fontFamily: "Raleway",
-              fontSize: "25px",
-              fontWeight: "400",
-              lineHeight: "29.35px",
-              textAlign: "center",
-              padding: "0px",
-            }}
-          >
+          <p className={styles.nenhumaTarefa}>
             Nenhuma tarefa adicionada ainda.
           </p>
         )}
