@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  width: 650px;
+  height: 584px;
+  color: #ffffff;
+  font-family: 'Rubik';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

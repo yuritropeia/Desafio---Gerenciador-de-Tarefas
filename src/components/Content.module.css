@@ -1,0 +1,93 @@
+.body {
+  width: 650px;
+  min-height: 434px;
+  background-color: #ffffff;
+  color: #2d2d2d;
+}
+
+.body ul {
+  padding: 0;
+  height: auto;
+}
+
+.body h1 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 60px;
+  text-align: left;
+  margin: 0;
+  padding-left: 4.45%;
+  padding-top: 9.5%;
+}
+
+.body h2 {
+  font-family: "Raleway";
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 35.22px;
+  text-align: left;
+}
+
+.body button:hover {
+  cursor: pointer;
+}
+
+.addTask {
+  display: flex;
+  width: 650px;
+  gap: 10px;
+  padding-left: 4.23%;
+  padding-top: 4.23%;
+}
+
+.addTask input {
+  font-family: "Rubik";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 29.35px;
+  width: 255px;
+  height: 50px;
+  border: 1px solid;
+  border-color: #eeeeee;
+  border-radius: 8px;
+}
+
+.addTask input::placeholder {
+  text-align: left;
+  color: #b1bacb;
+  padding-left: 15px;
+}
+
+.addTask button {
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 400;
+  width: 45px;
+  height: 45px;
+  background-color: #2d70fd;
+  color: #ffffff;
+  border: 1px solid;
+  border-radius: 4px;
+  padding: 10px;
+  line-height: 110%;
+  margin-top: 5px;
+}
+
+.body li {
+  display: flex;
+  width: 550px;
+  height: 103px;
+  margin-left: 4.23%;
+  margin-right: 4.23%;
+  padding-left: 3%;
+  padding-right: 3%;
+  justify-content: space-between;
+  padding-bottom: 1px;
+  font-family: "Raleway";
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 29.35px;
+  border: 1px solid;
+  border-color: #eeeeee;
+  border-radius: 16px;
+}

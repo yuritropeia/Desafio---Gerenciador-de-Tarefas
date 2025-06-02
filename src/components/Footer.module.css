@@ -1,0 +1,21 @@
+.footer {
+  background-color: #ffffff;
+  height: 75px;
+  width: 650px;
+  margin: 0;
+  display: flex;
+}
+
+.tarefas {
+  width: 650px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 4.23%;
+  justify-content: end;
+  color: #b1bacb;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 110%;
+}
