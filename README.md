@@ -15,11 +15,13 @@ Uma aplicação web de lista de tarefas (to-do list) simples e funcional. Permit
 
 ## 📸 Preview
 
-| Desktop                             | Mobile                              |
-|-------------------------------------|-------------------------------------|
-| ![image](https://github.com/user-attachments/assets/958b55bf-3393-4e82-bd3f-929c0e0ce793)
- | ![image](https://github.com/user-attachments/assets/8df9a662-6a49-44d9-95cf-b341c75650bd)
- |
+| Desktop                             |
+|-------------------------------------|
+| ![image](https://github.com/user-attachments/assets/958b55bf-3393-4e82-bd3f-929c0e0ce793)|
+
+| Mobile                              |
+|-------------------------------------|
+| ![image](https://github.com/user-attachments/assets/8df9a662-6a49-44d9-95cf-b341c75650bd)|
 
 ---
 
