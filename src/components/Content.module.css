@@ -1,14 +1,15 @@
 .body {
-  width: 650px;
-  min-height: 434px;
+  min-height: 30rem;
   background-color: #ffffff;
   color: #2d2d2d;
 }
 
 .body ul {
-  margin-top: 24px;
+  margin-top: 1.5rem;
   padding: 0;
   height: auto;
+  margin-bottom: 0;
+  padding-bottom: 1rem;
 }
 
 .body button:hover {
@@ -17,23 +18,22 @@
 
 .addTask {
   display: flex;
-  width: 650px;
-  gap: 16px;
+  gap: 0.8rem;
   padding-left: 4.23%;
   padding-top: 4.23%;
 }
 
 .addTask input {
   font-family: "Rubik";
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
-  line-height: 29.35px;
-  width: 236px;
-  height: 50px;
-  border: 1px solid;
+  line-height: 3rem;
+  width: 15rem;
+  height: 3rem;
+  border: 0.08rem solid;
   border-color: #eeeeee;
-  border-radius: 8px;
-  padding-left: 16px;
+  border-radius: 0.5rem;
+  padding-left: 1rem;
 }
 
 .addTask input::placeholder {
@@ -43,49 +43,49 @@
 
 .addTask button {
   font-family: "Inter";
-  font-size: 18px;
+  font-size: 1.5rem;
   font-weight: 400;
-  width: 45px;
-  height: 45px;
+  width: 2.75rem;
+  height: 2.75rem;
   background-color: #2d70fd;
   color: #ffffff;
   border: 1px solid;
-  border-radius: 4px;
-  padding: 10px;
+  border-radius: 0.25rem;
+  padding: 0.6rem;
   line-height: 110%;
-  margin-top: 5px;
+  margin-top: 0.25rem;
 }
 
 .body li {
   display: flex;
-  width: 550px;
-  height: 103px;
+  width: 34.5rem;
+  height: 6.5rem;
   margin-left: 4.23%;
   margin-right: 4.23%;
-  margin-top: 8px;
+  margin-top: 0.5rem;
   padding-left: 3%;
   padding-right: 3%;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 1px;
-  border: 1px solid;
+  padding-bottom: 0.08rem;
+  border: 0.08rem solid;
   border-color: #eeeeee;
-  border-radius: 16px;
+  border-radius: 1rem;
 }
 
 .card1 {
   word-wrap: "break-word";
   white-space: "normal";
-  width: 400px;
+  width: 25rem;
 }
 
 .taskNotCompleted {
   text-align: left;
   margin: 0;
-  padding-top: 12px;
+  padding-top: 0.75rem;
   font-family: "Inter";
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 110%;
   letter-spacing: 1%;
   color: #001747;
@@ -94,10 +94,10 @@
 .taskCompleted {
   text-align: left;
   margin: 0;
-  padding-top: 12px;
+  padding-top: 0.75rem;
   font-family: "Inter";
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 110%;
   letter-spacing: 1%;
   color: #8f98a8;
@@ -108,20 +108,20 @@
   display: flex;
   justify-content: baseline;
   align-items: center;
-  gap: 8px;
+  gap: 0.5rem;
 }
 
 .card1 h2 {
-  border-radius: 16px;
-  padding-top: 4px;
-  padding-right: 8px;
-  padding-bottom: 4px;
-  padding-left: 8px;
-  margin-top: 10px;
-  border: 1px solid #b1bacb;
+  border-radius: 1rem;
+  padding-top: 0.25rem;
+  padding-right: 0.5rem;
+  padding-bottom: 0.25rem;
+  padding-left: 0.5rem;
+  margin-top: 0.625rem;
+  border: 0.08rem solid #b1bacb;
   font-family: "Inter";
   font-weight: 500;
-  font-size: 12px;
+  font-size: 0.75rem;
   line-height: 110%;
   letter-spacing: 1%;
   color: #b1bacb;
@@ -130,7 +130,7 @@
 .card1 p {
   font-family: "Inter";
   font-weight: 500;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 110%;
   letter-spacing: 1%;
   color: #b1bacb;
@@ -138,15 +138,15 @@
 }
 
 .card2 button {
-  border: 1px solid;
-  border-radius: 4px;
-  width: 121px;
-  height: 44px;
+  border: 0.08rem solid;
+  border-radius: 0.25rem;
+  width: 7.5rem;
+  height: 3rem;
   color: #ffffff;
   background-color: #2d70fd;
   font-family: "Inter";
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1.25rem;
   line-height: 110%;
   letter-spacing: 1%;
   text-align: center;
@@ -154,24 +154,92 @@
 
 .nenhumaTarefa {
   font-family: "Inter";
-  font-size: 18px;
+  font-size: 1.25rem;
   font-weight: 400;
-  line-height: 29.35px;
+  line-height: 1.75rem;
   text-align: center;
-  padding: 0px;
+  padding: 0;
   color: #11175e;
 }
 
 .checkCircle {
-  width: 32px;
-  height: 32px;
-  background-color: #4ADE80;
-  /* verde claro */
+  width: 2rem;
+  height: 2rem;
+  background-color: #4ade80;
   color: white;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 18px;
+  font-size: 1.25rem;
   cursor: default;
+}
+
+@media (max-width: 768px) {
+  .addTask {
+    flex-direction: column;
+    align-items: stretch;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+    .body ul {
+      margin-top: 1.5rem;
+      padding-left: 1rem;
+      margin-bottom: 0;
+      padding-bottom: 1rem;
+      width: 95%; }
+
+  .addTask input {
+    width: 95%;
+  }
+
+  .addTask button {
+    width: 100%;
+    height: 2.75rem;
+    font-size: 1.25rem;
+  }
+
+  .body li {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 87.5%;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 1rem;
+    height: auto;
+  }
+
+  .card1 {
+    width: 100%;
+  }
+
+  .card1 div {
+    padding-top: 0.3rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.005rem;
+  }
+
+  .card2 {
+    width: 100%;
+    margin-top: 0.75rem;
+    text-align: center;
+  }
+
+  .card2 button {
+    width: 7.5rem;
+    font-size: 1rem;
+    height: 2.5rem;
+  }
+
+  .nenhumaTarefa {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+  .checkCircle {
+    margin-left: 45.5%;
+      align-self: center;
+  }
 }

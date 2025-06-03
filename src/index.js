@@ -10,7 +10,7 @@ function App() {
   const [tasks, setTasks] = useState([]);
 
   return (
-    <div>
+    <div className="container">
       <Header />
       <Content tasks={tasks} setTasks={setTasks} />
       <Footer tasks={tasks} />

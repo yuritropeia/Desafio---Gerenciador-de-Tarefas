@@ -1,27 +1,24 @@
 .footer {
   background-color: #ffffff;
-  height: 75px;
-  width: 650px;
+  max-height: 4.75rem;
 }
 
 .tarefas {
-  width: 588px;
   display: flex;
   align-items: center;
-  margin-top: 24px;
-  margin-left: 28px;
+  margin-top: 1.5rem;
+  margin-left: 1rem;
   justify-content: end;
   color: #b1bacb;
   font-family: "Inter";
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 110%;
 }
 
 .rectangle {
-  width: 588px;
-  height: 1px;
+  width: 95%;
+  height: 0.08rem;
   background-color: #eeeeee;
-  margin-left: 28px;
-  margin-top: 24px;
+  margin-left: 1rem;
 }
